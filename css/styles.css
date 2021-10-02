@@ -617,6 +617,7 @@ h1 {
         left: 0;
         background-color: var(--blue);
         margin: 0 -20px;
+        z-index: 2;
     }
 
     .menu--first {
