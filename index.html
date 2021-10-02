@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Петербургский клининг тест</title>
+    <title>Петербургский клининг</title>
 </head>
 <body class="body">
 <header class="header">
@@ -66,9 +66,9 @@
     </div>
 </header>
 <main class="main">
-    <div class="fast">
+    <div class="fast" id="fast">
         <div class="container-x container-x--mini container-y">
-            <div class="texts">
+            <div class="texts texts--dark">
                 <p class="texts__item">Дорогой друг!</p>
                 <p class="texts__item">Познакомься с нами</p>
                 <p class="texts__item">за 1 минуту:</p>
@@ -92,6 +92,75 @@
                 <p class="link__other">в разделе “О нас”</p>
             </a>
         </div>
+        <ul class="indicators indicators--dark">
+            <li class="indicators__item indicators__item--active">
+                <a class="indicators__link" href="#fast">Кто мы</a>
+            </li>
+            <li class="indicators__item">
+                <a class="indicators__link" href="#steps">Как мы работаем</a>
+            </li>
+            <li class="indicators__item">
+                <a class="indicators__link" href="#stocks">Акции</a>
+            </li>
+            <li class="indicators__item">
+                <a class="indicators__link" href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    </div>
+    <div class="steps" id="steps">
+        <div class="container-x container-x--mini container-y">
+            <div class="texts texts--light">
+                <p class="texts__item">Что Вас ждёт.</p>
+                <p class="texts__item">От заказа до оплаты</p>
+            </div>
+            <ul class="steps__list">
+                <li class="steps__item">
+                    <p class="steps__number">1</p>
+                    <p class="steps__title">Оформление заказа</p>
+                    <p class="steps__text">Можно оформить на сайте, позвонить или заказать обратный звонок</p>
+                </li>
+                <li class="steps__item">
+                    <p class="steps__number">3</p>
+                    <p class="steps__title">Выезд персонала</p>
+                    <p class="steps__text">На генеральную и послестроительную уборки мы привозим весь инвентарь, от Вас ничего не требуется. На стандартную уборку Вам нужно предоставить ведро, пылесос и швабру.</p>
+                </li>
+                <li class="steps__item">
+                    <p class="steps__number">5</p>
+                    <p class="steps__title">Приём работ</p>
+                    <p class="steps__text">Вы подписываете с клинером акт выполненных работ</p>
+                </li>
+                <li class="steps__item">
+                    <p class="steps__number">2</p>
+                    <p class="steps__title">Подтверждение</p>
+                    <p class="steps__text">Мы перезваниваем, уточняем детали и подтверждаем заказ</p>
+                </li>
+                <li class="steps__item">
+                    <p class="steps__number">4</p>
+                    <p class="steps__title">Подписание договора, уборка</p>
+                    <p class="steps__text">Вы подписываетет с клинером <span class="steps__italics">договор на оказание услуг по уборке помещения. </span>Во время уборки Вы можете как находиться дома, так и оставить клинера одного</p>
+                </li>
+                <li class="steps__item">
+                    <p class="steps__number">6</p>
+                    <p class="steps__title">Оплата</p>
+                    <p class="steps__text">Онлайн на сайте или наличными клинеру</p>
+                </li>
+            </ul>
+        </div>
+        <img class="steps__lamp" src="img/lamp.png" width="461" height="789" alt="Лампа">
+        <ul class="indicators indicators--light">
+            <li class="indicators__item">
+                <a class="indicators__link" href="#fast">Кто мы</a>
+            </li>
+            <li class="indicators__item indicators__item--active">
+                <a class="indicators__link" href="#steps">Как мы работаем</a>
+            </li>
+            <li class="indicators__item">
+                <a class="indicators__link" href="#stocks">Акции</a>
+            </li>
+            <li class="indicators__item">
+                <a class="indicators__link" href="#contacts">Контакты</a>
+            </li>
+        </ul>
     </div>
 </main>
 <script src="js/scripts.js"></script>
