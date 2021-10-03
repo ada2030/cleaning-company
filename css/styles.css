@@ -77,6 +77,7 @@ html {
     --orange-1: #E97B2C;
     --orange-2: #FFA945;
     --orange-3: #FF7A00;
+    --dark-orange: #DD6A00;
     --gray: #727272;
     --brown: rgba(255, 138, 0, 0.28);
     --violet: #7378AB;
@@ -163,6 +164,7 @@ h1 {
 .menu__item--absolut {
     position: absolute;
     top: 217px;
+    z-index: 1;
 }
 
 .menu__item--absolut-left {
@@ -457,7 +459,56 @@ h1 {
     background-color: var(--violet);
 }
 
+/* стили акции*/
+
+.stocks {
+    position: relative;
+}
+
+.stocks__list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 35px 0 70px;
+}
+
+.stocks__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-right: 2px solid var(--dark-orange);
+    padding: 100px 8px;
+    min-height: 410px;
+}
+
+.stocks__item:last-child {
+    border-right: none;
+}
+
+.stocks__title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 36px;
+    color: var(--black);
+    margin: 0 0 45px;
+}
+
+.stocks__icon {
+    margin: 0 0 35px;
+}
+
+.stocks__text {
+    font-size: 28px;
+    line-height: 30px;
+    color: var(--black);
+}
+
 @media (max-width: 1750px) {
+    /* стили пошаговая инструкция*/
+
     .indicators {
         display: none;
     }
@@ -760,6 +811,40 @@ h1 {
     .steps__lamp {
         display: none;
     }
+
+    /* стили акции*/
+
+    .stocks__list {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .stocks__item {
+        padding: 80px 10px;
+    }
+
+    .stocks__item:nth-child(2) {
+        border-bottom: 2px solid var(--dark-orange);
+        border-right: none;
+    }
+
+    .stocks__item:nth-child(1) {
+        border-bottom: 2px solid var(--dark-orange);
+    }
+
+    .stocks__title {
+        font-size: 30px;
+        line-height: 32px;
+        margin: 0 0 35px;
+    }
+
+    .stocks__icon {
+        margin: 0 0 30px;
+    }
+
+    .stocks__text {
+        font-size: 26px;
+        line-height: 28px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -861,6 +946,38 @@ h1 {
         font-size: 24px;
         line-height: 26px;
     }
+
+    /* стили акции*/
+
+    .stocks__list {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .stocks__item {
+        padding: 60px 10px;
+        border-right: none;
+        border-bottom: 2px solid var(--dark-orange);
+        min-height: auto;
+    }
+
+    .stocks__item:last-child {
+        border-bottom: none;
+    }
+
+    .stocks__title {
+        font-size: 26px;
+        line-height: 28px;
+        margin: 0 0 30px;
+    }
+
+    .stocks__icon {
+        margin: 0 0 25px;
+    }
+
+    .stocks__text {
+        font-size: 22px;
+        line-height: 24px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -934,6 +1051,27 @@ h1 {
     .steps__text {
         font-size: 22px;
         line-height: 24px;
+    }
+
+    /* стили акции*/
+
+    .stocks__item {
+        padding: 40px 10px;
+    }
+
+    .stocks__title {
+        font-size: 22px;
+        line-height: 24px;
+        margin: 0 0 25px;
+    }
+
+    .stocks__icon {
+        margin: 0 0 20px;
+    }
+
+    .stocks__text {
+        font-size: 20px;
+        line-height: 22px;
     }
 }
 
@@ -1013,17 +1151,20 @@ h1 {
     .link {
         flex-direction: row;
         justify-content: center;
+        display: block;
     }
 
     .link__main {
         font-size: 16px;
         line-height: 18px;
         margin: 0 5px 0 0;
+        display: inline;
     }
 
     .link__other {
         font-size: 16px;
         line-height: 18px;
+        display: inline;
     }
 
     /* стили пошаговая инструкция*/
@@ -1041,5 +1182,47 @@ h1 {
     .steps__text {
         font-size: 18px;
         line-height: 20px;
+    }
+
+    /* стили акции*/
+
+    .stocks__list {
+        margin: 5px 0 40px;
+    }
+
+    .stocks__item {
+        padding: 20px 10px;
+    }
+
+    .stocks__title {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0 0 10px;
+    }
+
+    .stocks__icon {
+        margin: 0 0 10px;
+        height: auto;
+    }
+
+    .stocks__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .stocks__icon--beginner {
+        width: 70px;
+    }
+
+    .stocks__icon--friend {
+        width: 100px;
+    }
+
+    .stocks__icon--student {
+        width: 65px;
+    }
+
+    .stocks__icon--five {
+        width: 80px;
     }
 }
