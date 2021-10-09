@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="plugins/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Петербургский клининг</title>
+</head>
+<body class="body">
+<header class="header">
+    <div class="container-x container-x--big">
+        <div class="header__wrap js-main-menu">
+            <button class="header__burger js-hamburger">
+                <span></span>
+            </button>
+            <nav class="menu menu--first">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">
+                            <span class="menu__border">Главная</span>
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--active">
+                        <a class="menu__link" href="#">
+                            <span class="menu__border">Заказ</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header__main-link" href="index.html">
+                <img class="header__logo" src="img/logo.png" width="85" height="110" alt="Лого компании">
+                <p class="header__name">Петербургский клининг</p>
+            </a>
+            <nav class="menu menu--second">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            <span class="menu__border">Услуги</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            <span class="menu__border">О нас</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container-x container-x--mini container-y">
+        <div class="order">
+            <div class="slider">
+                <div class="slider__arrows-block js-slider-controls">
+                    <a class="slider__arrows-link">
+                        <img class="slider__arrow slider__arrow--left" src="img/slider-arrow.png" width="197" height="45" alt="Стрелка слайдера">
+                    </a>
+                    <a class="slider__arrows-link">
+                        <img class="slider__arrow" src="img/slider-arrow.png" width="197" height="45" alt="Стрелка слайдера">
+                    </a>
+                </div>
+                <ul class="slider__list js-tiny-slider"
+                    data-controls-container=".js-slider-controls"
+                    data-controls="true"
+                    data-items="1"
+                    data-loop="true"
+                    data-autoplay="false"
+                    data-speed="1000"
+                    data-mouse-drag="true"
+                    data-mode="carousel"
+                    data-nav="false"
+                    data-autoplay-timeout="10000"
+                    data-autoplay-over-pause="true"
+                >
+                    <li class="slider__item">
+                        <div class="slider__const">
+                            <p class="slider__number">1</p>
+                            <p class="slider__text">Выберите уборку</p>
+                        </div>
+                        <ul class="cleaning">
+                            <li class="cleaning__item cleaning__item--active">
+                                <div class="cleaning__wrap">
+                                    <img class="cleaning__img" src="img/daily.png" width="193" height="180" alt="Поддерживающая">
+                                </div>
+                                <p class="cleaning__name">Поддерживающая</p>
+                                <img class="cleaning__icon" src="img/daily-icon.png" width="45" height="45" alt="Поддерживающая иконка">
+                                <p class="cleaning__price">60 р/м2</p>
+                            </li>
+                            <li class="cleaning__item">
+                                <div class="cleaning__wrap">
+                                    <img class="cleaning__img" src="img/standard.png" width="193" height="180" alt="Стандартная">
+                                </div>
+                                <p class="cleaning__name">Стандартная</p>
+                                <img class="cleaning__icon" src="img/standard-icon.png" width="45" height="45" alt="Стандартная иконка">
+                                <p class="cleaning__price">75 р/м2</p>
+                            </li>
+                            <li class="cleaning__item">
+                                <div class="cleaning__wrap">
+                                    <img class="cleaning__img" src="img/clear-out.png" width="193" height="180" alt="Генеральная">
+                                </div>
+                                <p class="cleaning__name">Генеральная</p>
+                                <img class="cleaning__icon" src="img/clear-out-icon.png" width="45" height="45" alt="Генеральная иконка">
+                                <p class="cleaning__price">125 р/м2</p>
+                            </li>
+                            <li class="cleaning__item">
+                                <div class="cleaning__wrap">
+                                    <img class="cleaning__img" src="img/after-construction.png" width="193" height="180" alt="Послестроительная">
+                                </div>
+                                <p class="cleaning__name">Послестроительная</p>
+                                <img class="cleaning__icon" src="img/after-construction-icon.png" width="45" height="45" alt="Послестроительная иконка">
+                                <p class="cleaning__price">140 р/м2</p>
+                            </li>
+                            <li class="cleaning__item">
+                                <div class="cleaning__wrap">
+                                    <img class="cleaning__img" src="img/windows.png" width="193" height="180" alt="Мойка окон">
+                                </div>
+                                <p class="cleaning__name">Мойка окон</p>
+                                <img class="cleaning__icon" src="img/windows-icon.png" width="45" height="45" alt="Мойка окон иконка">
+                                <p class="cleaning__price">250 р/створка</p>
+                            </li>
+                        </ul>
+                        <div class="slider__const">
+                            <p class="slider__number">2</p>
+                            <p class="slider__text">Укажите площадь квартиры или дома</p>
+                        </div>
+                        <div class="form-wrap">
+                            <form class="form">
+                                <div class="form__group">
+                                    <input class="form__input" type="text">
+                                </div>
+                            </form>
+                            <p class="form-wrap__text">м2</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="slider__const">
+                            <p class="slider__number">3</p>
+                            <p class="slider__text">Выберите дополнительные услуги</p>
+                        </div>
+                        <ul class="additional">
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/fridge.png" width="30" height="80" alt="Холодильник">
+                                <p class="additional__price">250<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Холодильник</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Помоем холодильник внутри и снаружи. Если нужно помыть морозильную камеру, пожалуйста, разморозьте её заранее.</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/hood.png" width="71" height="68" alt="Вытяжка">
+                                <p class="additional__price">300<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Вытяжка</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Помоем фильтры и вытяжку внутри и снаружи.</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/microwave.png" width="80" height="46" alt="Микроволновка">
+                                <p class="additional__price">250<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Микроволновка</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Помоем микроволновку внутри и снаружи</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/cupboard.png" width="91" height="64" alt="Внутри кухонных шкафчиков">
+                                <p class="additional__price">350<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Внутри кухонных шкафчиков</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Пожалуйста, заранее освободите шкафчики. Мы можем сделать это самостоятельно, за почасовую отплау</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/windows-1.png" width="59" height="63" alt="Окна">
+                                <p class="additional__price">250<span class="additional__price-ruble"></span>р./створка</p>
+                                <p class="additional__name">Окна</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Помоем до блеска любые окна!</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/iron.png" width="64" height="41" alt="Глажка">
+                                <p class="additional__price">250<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Глажка</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Примерное количество белья, которое мы гладим за час:
+                                        рубашка - 6-7/
+                                        брюки - 8-10/
+                                        платья - 8-10/
+                                        др. вещи - 13-15/
+                                        комплект двуспального постельного белья - 25-30 мин.</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/washer.png" width="47" height="66" alt="Стирка">
+                                <p class="additional__price">150<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Стирка</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">С удовольствием загрузим стиральную машину и развесим вещи на сушилку</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/kitchen-stove.png" width="45" height="62" alt="Духовка">
+                                <p class="additional__price">450<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Духовка</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Отмоем духовку внутри и снаружи</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/book.png" width="71" height="54" alt="Доп. поручения">
+                                <p class="additional__price">600<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Доп. поручения</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">Выполним любые задачи, не входящие в перечнь.</p>
+                                </div>
+                            </li>
+                            <li class="additional__item">
+                                <img class="additional__icon" src="img/cat.png" width="51" height="51" alt="Кошка">
+                                <p class="additional__price">100<span class="additional__price-ruble"></span>р.</p>
+                                <p class="additional__name">Поменять наполнитель и помыть лоток</p>
+                                <div class="additional__info">
+                                    <a class="additional__link">
+                                        <div class="additional__circle">?</div>
+                                    </a>
+                                    <p class="additional__text">С заботой о Ваших любимых питомцах!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <p class="order__sum">
+                <span class="order__sum-text">Итого:</span>9350<span class="order__sum-ruble">р.</span>
+            </p>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <ul class="footer__contacts">
+        <li class="footer__item">
+            <a class="footer__link" href="mailto: roman__turaev@mail.ru">roman__turaev@mail.ru</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="tel: 7 (981) 935-83-73">+7 (981) 935-83-73</a>
+        </li>
+    </ul>
+</footer>
+<script src="plugins/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="plugins/tiny-slider/tiny-slider.helper.ie8.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.helper.ie8.min.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.min.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>
