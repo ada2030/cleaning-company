@@ -112,6 +112,7 @@ html {
     --light-brown: #B4571D;
     --violet: #7378AB;
     --burgundy: rgba(38, 56, 215, 0.12);
+    --light-yellow: #FFD3AA;
 }
 /* применение var(--color-blue); */
 
@@ -808,15 +809,16 @@ h1 {
 }
 
 .additional {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     grid-row-gap: 55px;
     grid-column-gap: 80px;
     padding: 0 15px;
 }
 
 .additional__item {
-    width: 100%;
+    width: calc((100% / 5) - 64px);
     background: var(--burgundy);
     border: 2px solid var(--black);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 2px 2px 10px rgba(0, 0, 0, 0.45);
@@ -830,8 +832,19 @@ h1 {
     justify-content: space-around;
 }
 
+.additional__item--active {
+    background: var(--light-yellow);
+    border: 2px solid var(--black);
+    box-shadow: inset -4px -4px 5px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(0, 0, 0, 0.5), inset 13px 13px 10px rgba(0, 0, 0, 0.25);
+}
+
 .additional__icon {
     margin: 0 0 5px;
+    height: auto;
+}
+
+.additional__item--active .additional__icon {
+    opacity: 0.5;
 }
 
 .additional__price {
@@ -842,19 +855,28 @@ h1 {
     margin: 0 0 5px;
 }
 
+.additional__item--active .additional__price--none {
+    display: none;
+}
+
 .additional__price-ruble {
     margin: 0 0 0 5px;
 }
 
 .additional__name {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 27px;
+    line-height: 29px;
+}
+
+.additional__item--active .additional__name--none {
+    display: none;
 }
 
 .additional__info {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 2;
 }
 
 .additional__link {
@@ -917,6 +939,48 @@ h1 {
     transition: 0.3s;
 }
 
+.additional__choice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+}
+
+.additional__item--active .additional__choice {
+    display: flex;
+}
+
+.additional__wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.additional__arrow-link {
+    padding: 5px;
+}
+
+.additional__arrow--right {
+    transform: rotate(180deg);
+}
+
+.additional__amount {
+    font-size: 38px;
+    line-height: 40px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1850px) {
     /* стили пошаговая инструкция*/
 
@@ -930,6 +994,51 @@ h1 {
 
     .indicators {
         display: none;
+    }
+}
+
+@media (max-width: 1680px) {
+    /*стили заказа*/
+
+    .additional__icon--hood {
+        width: 64px;
+    }
+
+    .additional__icon--microwave {
+        width: 73px;
+    }
+
+    .additional__icon--cupboard {
+        width: 83px;
+    }
+
+    .additional__icon--windows {
+        width: 54px;
+    }
+
+    .additional__icon--iron {
+        width: 57px;
+    }
+
+    .additional__icon--washer {
+        width: 43px;
+    }
+
+    .additional__icon--stove {
+        width: 41px;
+    }
+
+    .additional__icon--book {
+        width: 65px;
+    }
+
+    .additional__icon--cat {
+        width: 46px;
+    }
+
+    .additional {
+        grid-row-gap: 49px;
+        grid-column-gap: 70px;
     }
 }
 
@@ -1012,6 +1121,10 @@ h1 {
     .steps__item:nth-child(6) {
         order: 6;
     }
+
+    .additional__item {
+        width: calc((100% / 4) - 53px);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1029,6 +1142,63 @@ h1 {
     .header__name {
         font-size: 42px;
         line-height: 44px;
+    }
+
+    /*стили заказа*/
+
+    .additional__name {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .additional__price {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .additional__icon--fridge {
+        width: 19px;
+    }
+
+    .additional__icon--hood {
+        width: 58px;
+    }
+
+    .additional__icon--microwave {
+        width: 66px;
+    }
+
+    .additional__icon--cupboard {
+        width: 74px;
+    }
+
+    .additional__icon--windows {
+        width: 48px;
+    }
+
+    .additional__icon--iron {
+        width: 51px;
+    }
+
+    .additional__icon--washer {
+        width: 38px;
+    }
+
+    .additional__icon--stove {
+        width: 36px;
+    }
+
+    .additional__icon--book {
+        width: 58px;
+    }
+
+    .additional__icon--cat {
+        width: 41px;
+    }
+
+    .additional {
+        grid-row-gap: 42px;
+        grid-column-gap: 56px;
     }
 }
 
@@ -1365,6 +1535,62 @@ h1 {
         font-size: 24px;
         line-height: 26px;
     }
+
+    .additional__item {
+        width: calc((100% / 3) - 38px);
+    }
+}
+
+@media (max-width: 840px) {
+    /*стили заказа*/
+
+    .additional__icon--hood {
+        width: 51px;
+    }
+
+    .additional__icon--microwave {
+        width: 58px;
+    }
+
+    .additional__icon--cupboard {
+        width: 65px;
+    }
+
+    .additional__icon--windows {
+        width: 42px;
+    }
+
+    .additional__icon--iron {
+        width: 45px;
+    }
+
+    .additional__icon--washer {
+        width: 34px;
+    }
+
+    .additional__icon--stove {
+        width: 32px;
+    }
+
+    .additional__icon--book {
+        width: 51px;
+    }
+
+    .additional__icon--cat {
+        width: 37px;
+    }
+
+    .additional {
+        grid-row-gap: 35px;
+        grid-column-gap: 42px;
+    }
+
+    .additional__circle {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1582,6 +1808,10 @@ h1 {
 
     .form-wrap {
         margin: 0 auto 30px;
+    }
+
+    .additional__item {
+        width: calc((100% / 2) - 21px);
     }
 }
 
@@ -1942,7 +2172,7 @@ h1 {
         line-height: 18px;
     }
 
-    /* стили заказа*/
+    /*стили заказа*/
 
     .slider__arrow {
         width: 114px;
@@ -2005,5 +2235,78 @@ h1 {
         width: 100%;
         border-top: 1px solid var(--black);
         border-bottom: 1px solid var(--black);
+    }
+
+    .additional__name {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .additional__price {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .additional__icon--fridge {
+        width: 14px;
+    }
+
+    .additional__icon--hood {
+        width: 45px;
+    }
+
+    .additional__icon--microwave {
+        width: 51px;
+    }
+
+    .additional__icon--cupboard {
+        width: 56px;
+    }
+
+    .additional__icon--windows {
+        width: 37px;
+    }
+
+    .additional__icon--iron {
+        width: 39px;
+    }
+
+    .additional__icon--washer {
+        width: 29px;
+    }
+
+    .additional__icon--stove {
+        width: 27px;
+    }
+
+    .additional__icon--book {
+        width: 44px;
+    }
+
+    .additional__icon--cat {
+        width: 32px;
+    }
+
+    .additional {
+        grid-row-gap: 28px;
+        grid-column-gap: 28px;
+    }
+
+    .additional__link {
+        padding: 10px;
+    }
+
+    .additional__circle {
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .additional__name {
+        font-size: 13px;
+        line-height: 15px;
     }
 }
