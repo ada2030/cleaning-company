@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="plugins/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Петербургский клининг</title>
+</head>
+<body class="body">
+<header class="header">
+    <div class="container-x container-x--big">
+        <div class="header__wrap js-main-menu">
+            <button class="header__burger js-hamburger">
+                <span></span>
+            </button>
+            <nav class="menu menu--first">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">
+                            <span class="menu__border">Главная</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="order.html">
+                            <span class="menu__border">Заказ</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header__main-link" href="index.html">
+                <img class="header__logo" src="img/logo.png" width="85" height="110" alt="Лого компании">
+                <p class="header__name">Петербургский клининг</p>
+            </a>
+            <nav class="menu menu--second">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--active">
+                        <a class="menu__link" href="services.html">
+                            <span class="menu__border">Услуги</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            <span class="menu__border">О нас</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container-x container-x--very-big container-y">
+        <div class="order">
+            <div class="slider slider--services">
+                <div class="slider__arrows-block js-slider-controls">
+                    <a class="slider__arrows-link">
+                        <svg class="slider__arrow" width="25" height="45">
+                            <use xlink:href="/img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                    <a class="slider__arrows-link slider__arrows-link--right">
+                        <svg class="slider__arrow" width="25" height="45">
+                            <use xlink:href="/img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="slider__list js-tiny-slider"
+                    data-controls-container=".js-slider-controls"
+                    data-controls="true"
+                    data-loop="true"
+                    data-autoplay="false"
+                    data-speed="1000"
+                    data-mouse-drag="true"
+                    data-mode="gallery"
+                    data-autoplay-timeout="10000"
+                    data-autoplay-over-pause="true"
+                    data-nav="true"
+                    data-nav-container=".js-slider-nav"
+                >
+                    <li class="slider__item">
+                        <div class="services">
+                            <div class="services__infos">
+                                <p class="services__heading">Стандартная уборка</p>
+                                <p class="services__text">Уборка на высоту до 1,8 м</p>
+                                <div class="services__unit">
+                                    <p class="services__info">75 р/м2</p>
+                                    <p class="services__info">2-4 часа</p>
+                                </div>
+                            </div>
+                            <section class="tabs">
+                                <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content-standard">
+                                    <li class="tabs__item" data-tab-id="tab-standard-1">
+                                        <a class="tabs__link">Кухня</a>
+                                    </li>
+                                    <li class="tabs__item tabs__item--active" data-tab-id="tab-standard-2">
+                                        <a class="tabs__link">Комната и коридор</a>
+                                    </li>
+                                    <li class="tabs__item" data-tab-id="tab-standard-3">
+                                        <a class="tabs__link">С/У</a>
+                                    </li>
+                                </ul>
+                                <div class="tabs__content" id="tabs-content-standard">
+                                    <div class="tabs__pane js-tab-cont" id="tab-standard-1">
+                                        <div class="service">
+                                            <img class="service__img" src="img/kitchen-standard.png" width="1110" height="625" alt="Список услуг">
+                                            <div class="service__mobile">
+                                                <p class="service__description">То же, что и в комнате, плюс:</p>
+                                                <ul class="service__list">
+                                                    <li class="service__item">Моем плиту и духовку (снаружи);</li>
+                                                    <li class="service__item">Моем столешницу и обеденный стол;</li>
+                                                    <li class="service__item">Моем микроволновку и холодильник снаружи;</li>
+                                                    <li class="service__item">Моем вытяжку снаружи;</li>
+                                                    <li class="service__item">Моем фасады;</li>
+                                                    <li class="service__item">Моем фартук, посуду и раковину, выносим мусор</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__pane js-tab-cont js-show tabs__pane--active" id="tab-standard-2">
+                                        <div class="service">
+                                            <img class="service__img" src="img/bedroom-standard.png" width="1110" height="625" alt="Список услуг">
+                                            <div class="service__mobile">
+                                                <ul class="service__list">
+                                                    <li class="service__item">Пылесосим, моем пол и плинтусы;</li>
+                                                    <li class="service__item">Пылесосим мягкую мебель снаружи;</li>
+                                                    <li class="service__item">Моем подоконники, радиаторы и трубы;</li>
+                                                    <li class="service__item">Моем дверь, ручкки, розетки и выключатели;</li>
+                                                    <li class="service__item">Моем зеркала и стеклянные поверхности;</li>
+                                                    <li class="service__item">Меняем постельное бельё;</li>
+                                                    <li class="service__item">Моем фасады мебели;</li>
+                                                    <li class="service__item">Протираем все горизонтальные поверхности</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__pane js-tab-cont" id="tab-standard-3">
+                                        <div class="service">
+                                            <img class="service__img" src="img/bathroom-standard.png" width="1110" height="625" alt="Список услуг">
+                                            <div class="service__mobile">
+                                                <ul class="service__list">
+                                                    <li class="service__item">Моем всю сантехнику;</li>
+                                                    <li class="service__item">Моем ванну и раковину;</li>
+                                                    <li class="service__item">Моем стены локально;</li>
+                                                    <li class="service__item">Моем унитаз;</li>
+                                                    <li class="service__item">Моем фасады мебели;</li>
+                                                    <li class="service__item">Моем зеркала и стеклянные поверхности;</li>
+                                                    <li class="service__item">Моем дверь, ручки, розетки и выключатели;</li>
+                                                    <li class="service__item">Моем пол</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="services">
+                            <div class="services__infos">
+                                <p class="services__heading">Генеральная уборка</p>
+                                <p class="services__text">Уборка на высоту до 1,8 м</p>
+                                <div class="services__unit">
+                                    <p class="services__info">125 р/м2</p>
+                                    <p class="services__info">6-8 часов</p>
+                                </div>
+                            </div>
+                            <section class="tabs">
+                                <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content-general">
+                                    <li class="tabs__item" data-tab-id="tab-general-1">
+                                        <a class="tabs__link">Кухня</a>
+                                    </li>
+                                    <li class="tabs__item tabs__item--active" data-tab-id="tab-general-2">
+                                        <a class="tabs__link">Комната и коридор</a>
+                                    </li>
+                                    <li class="tabs__item" data-tab-id="tab-general-3">
+                                        <a class="tabs__link">С/У</a>
+                                    </li>
+                                </ul>
+                                <div class="tabs__content" id="tabs-content-general">
+                                    <div class="tabs__pane js-tab-cont" id="tab-general-1">
+                                        <div class="service">
+                                            <img class="service__img" src="img/kitchen-general.png" width="1110" height="625" alt="Список услуг">
+                                            <div class="service__mobile">
+                                                <p class="service__description">То же, что и в комнате, плюс:</p>
+                                                <ul class="service__list">
+                                                    <li class="service__item">Моем плиту и духовку (снаружи);</li>
+                                                    <li class="service__item">Моем столешницу и обеденный стол;</li>
+                                                    <li class="service__item">Моем микроволновку и холодильник снаружи;</li>
+                                                    <li class="service__item">Моем вытяжку снаружи;</li>
+                                                    <li class="service__item">Моем фасады;</li>
+                                                    <li class="service__item">Моем фартук, посуду и раковину, выносим мусор</li>
+                                                </ul>
+                                                <ul class="service__list">
+                                                    <li class="service__item">Моем плиту и духовку (внутри и снаружи);</li>
+                                                    <li class="service__item">Моем микроволновку и холодильник (внутри и снаружи);</li>
+                                                    <li class="service__item">Моем вытяжку (внутри и снаружи), фильтры;</li>
+                                                    <li class="service__item">Обеспыливаем люстрю</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__pane js-tab-cont js-show tabs__pane--active" id="tab-general-2">
+                                        <div class="service">
+                                            <img class="service__img" src="img/bedroom-general.png" width="1110" height="625" alt="Список услуг">
+                                            <div class="service__mobile">
+                                                <ul class="service__list">
+                                                    <li class="service__item">Пылесосим, моем пол и плинтусы;</li>
+                                                    <li class="service__item">Пылесосим мягкую мебель снаружи;</li>
+                                                    <li class="service__item">Моем подоконники, радиаторы и трубы;</li>
+                                                    <li class="service__item">Моем дверь, ручкки, розетки и выключатели;</li>
+                                                    <li class="service__item">Моем зеркала и стеклянные поверхности;</li>
+                                                    <li class="service__item">Меняем постельное бельё;</li>
+                                                    <li class="service__item">Моем фасады мебели;</li>
+                                                    <li class="service__item">Протираем все горизонтальные поверхности</li>
+                                                </ul>
+                                                <ul class="service__list">
+                                                    <li class="service__item">Отодвигаем мебель и моем в труднодоступных местах;</li>
+                                                    <li class="service__item">Обеспыливаем стены и потолок;</li>
+                                                    <li class="service__item">Пылесосим мягкую мебель внутри и снаружи;</li>
+                                                    <li class="service__item">Обеспыливаем люстру</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__pane js-tab-cont" id="tab-general-3">
+                                        <div class="service">
+                                            <img class="service__img" src="img/bathroom-general.png" width="1110" height="625" alt="Список услуг">
+                                            <div class="service__mobile">
+                                                <ul class="service__list">
+                                                    <li class="service__item">Моем всю сантехнику;</li>
+                                                    <li class="service__item">Моем ванну и раковину;</li>
+                                                    <li class="service__item">Моем стены локально;</li>
+                                                    <li class="service__item">Моем унитаз;</li>
+                                                    <li class="service__item">Моем фасады мебели;</li>
+                                                    <li class="service__item">Моем зеркала и стеклянные поверхности;</li>
+                                                    <li class="service__item">Моем дверь, ручки, розетки и выключатели;</li>
+                                                    <li class="service__item">Моем пол</li>
+                                                </ul>
+                                                <ul class="service__list">
+                                                    <li class="service__item">Очищаем межплиточные швы;</li>
+                                                    <li class="service__item">Моем потолок и стены на всю высоту;</li>
+                                                    <li class="service__item">Чистим парогенератором труднодоступные места;</li>
+                                                    <li class="service__item">Моем потолок и стены на всю высоту</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="services">
+                            <div class="services__infos">
+                                <p class="services__heading">Поддерживающая уборка</p>
+                                <p class="services__text">Уборка на высоту до 1,8 м</p>
+                                <div class="services__unit">
+                                    <p class="services__info">140 р/м2</p>
+                                    <p class="services__info">6-8 часов</p>
+                                </div>
+                            </div>
+                            <div class="service service--no-img">
+                                <p class="service__text">Послестроительная уборка включает в себя весь перечень работ генеральной уборки + удаление следов краски, клея и других строительных загрязнений.</p>
+                                <p class="service__text">Почему же цена выше? Всё просто - больше трудозатраты.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="services">
+                            <div class="services__infos">
+                                <p class="services__heading">Послестроительная уборка</p>
+                                <p class="services__text">Уборка на высоту до 1,8 м</p>
+                                <div class="services__unit">
+                                    <p class="services__info">До 65 р/м2</p>
+                                    <p class="services__info">2-4 часов</p>
+                                </div>
+                            </div>
+                            <div class="service service--no-img">
+                                <p class="service__text">Поддерживающая уборка включает в себя весь перечень работ стандартной уборки.</p>
+                                <p class="service__text">Почему же цена ниже? Всё просто - заключается договор на регулярные уборки от 2-х раз в месяц. </p>
+                                <p class="service__text">Чаще уборка - ниже цена.</p>
+                                <p class="service__text">(Приятный бонус - за Вами закрепляется один клинер)</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="slider__indicators js-slider-nav">
+                    <li class="slider__indicators-item  slider__indicators-item--main">
+                        <svg class="slider__indicator slider__indicator--left" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                        Стандартная
+                        <svg class="slider__indicator" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                    </li>
+                    <li class="slider__indicators-item  slider__indicators-item--main-last">
+                        <svg class="slider__indicator slider__indicator--left" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                        Генеральная
+                        <svg class="slider__indicator" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                    </li>
+                    <li class="slider__indicators-item">
+                        <svg class="slider__indicator slider__indicator--left" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                        Послестроительная
+                        <svg class="slider__indicator" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                    </li>
+                    <li class="slider__indicators-item">
+                        <svg class="slider__indicator slider__indicator--left" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                        Поддерживающая
+                        <svg class="slider__indicator" width="30" height="12">
+                            <use xlink:href="/img/sprite.svg#indicator-arrow"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <div class="slider__wrap">
+                    <a class="slider__order" href="#">Заказать</a>
+                    <a class="slider__link" href="#">Подробный перечень услуг</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <ul class="footer__contacts">
+        <li class="footer__item">
+            <a class="footer__link" href="mailto: roman__turaev@mail.ru">roman__turaev@mail.ru</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="tel: 7 (981) 935-83-73">+7 (981) 935-83-73</a>
+        </li>
+    </ul>
+</footer>
+<script src="plugins/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="plugins/tiny-slider/tiny-slider.helper.ie8.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.helper.ie8.min.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.min.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

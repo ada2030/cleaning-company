@@ -3,5 +3,8 @@
         <line x1="13.7447" y1="0.707107" x2="0.707099" y2="13.7447" stroke="black" stroke-width="2"/>
         <line x1="1.07783" y1="12.4614" x2="14.1154" y2="25.499" stroke="black" stroke-width="2"/>
     </symbol>
+    <symbol id="indicator-arrow" viewBox="0 0 30 12" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M0.913998 5.94287L10.914 0.16937L10.914 11.7164L0.913998 5.94287ZM29.1292 6.94287L9.914 6.94287L9.914 4.94287L29.1292 4.94287L29.1292 6.94287Z" fill="#DD6A00"/>
+    </symbol>
 </svg>
 <!--Вставка <svg class="" width="" height=""><use xlink:href="/img/sprite.svg#id"></use></svg>-->
