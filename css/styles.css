@@ -4,9 +4,9 @@
     font-style: normal;
     font-display: swap;
     src: local('EBGaramond Regular'), local('EBGaramond-Regular'),
-    url("/fonts/ebgaramond-regular.woff2") format("woff2"),
-    url("/fonts/ebgaramond-regular.woff") format("woff"),
-    url("/fonts/ebgaramond-regular.ttf") format("ttf");
+    url("../fonts/ebgaramond-regular.woff2") format("woff2"),
+    url("../fonts/ebgaramond-regular.woff") format("woff"),
+    url("../fonts/ebgaramond-regular.ttf") format("ttf");
 }
 
 @font-face {
@@ -15,9 +15,9 @@
     font-style: normal;
     font-display: swap;
     src: local('EBGaramond Medium'), local('EBGaramond-Medium'),
-    url("/fonts/ebgaramond-medium.woff2") format("woff2"),
-    url("/fonts/ebgaramond-medium.woff") format("woff"),
-    url("/fonts/ebgaramond-medium.ttf") format("ttf");
+    url("../fonts/ebgaramond-medium.woff2") format("woff2"),
+    url("../fonts/ebgaramond-medium.woff") format("woff"),
+    url("../fonts/ebgaramond-medium.ttf") format("ttf");
 }
 
 @font-face {
@@ -26,9 +26,9 @@
     font-style: italic;
     font-display: swap;
     src: local('EBGaramond Italic'), local('EBGaramond-Italic'),
-    url("/fonts/ebgaramond-italic.woff2") format("woff2"),
-    url("/fonts/ebgaramond-italic.woff") format("woff"),
-    url("/fonts/ebgaramond-italic.ttf") format("ttf");
+    url("../fonts/ebgaramond-italic.woff2") format("woff2"),
+    url("../fonts/ebgaramond-italic.woff") format("woff"),
+    url("../fonts/ebgaramond-italic.ttf") format("ttf");
 }
 
 @font-face {
@@ -37,9 +37,9 @@
     font-style: italic;
     font-display: swap;
     src: local('EBGaramond MediumItalic'), local('EBGaramond-MediumItalic'),
-    url("/fonts/ebgaramond-mediumitalic.woff2") format("woff2"),
-    url("/fonts/ebgaramond-mediumitalic.woff") format("woff"),
-    url("/fonts/ebgaramond-mediumitalic.ttf") format("ttf");
+    url("../fonts/ebgaramond-mediumitalic.woff2") format("woff2"),
+    url("../fonts/ebgaramond-mediumitalic.woff") format("woff"),
+    url("../fonts/ebgaramond-mediumitalic.ttf") format("ttf");
 }
 
 @font-face {
@@ -48,9 +48,9 @@
     font-style: italic;
     font-display: swap;
     src: local('EBGaramond SemiBoldItalic'), local('EBGaramond-SemiBoldItalic'),
-    url("/fonts/ebgaramond-semibolditalic.woff2") format("woff2"),
-    url("/fonts/ebgaramond-semibolditalic.woff") format("woff"),
-    url("/fonts/ebgaramond-semibolditalic.ttf") format("ttf");
+    url("../fonts/ebgaramond-semibolditalic.woff2") format("woff2"),
+    url("../fonts/ebgaramond-semibolditalic.woff") format("woff"),
+    url("../fonts/ebgaramond-semibolditalic.ttf") format("ttf");
 }
 
 html {
